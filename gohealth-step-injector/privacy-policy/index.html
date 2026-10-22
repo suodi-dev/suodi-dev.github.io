@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta"><strong>Effective date:</strong> October 21, 2026</p>
+<p class="meta"><strong>Effective date:</strong> October 23, 2026</p>
 <p class="meta"><strong>App:</strong> GoHealth Step Injector</p>
 <p>This privacy policy explains how GoHealth Step Injector ("the App") handles information. We are committed to transparency and to protecting your privacy.</p>
 
@@ -24,7 +24,7 @@
 <ul>
   <li>Read, collect, or retrieve any existing health or fitness data from Health Connect (the App uses <strong>write-only</strong> permissions).</li>
   <li>Collect, store, or transmit any personal or health tracking data to external servers.</li>
-  <li>Share any data with advertising networks, analytics providers, or any third party.</li>
+  <li>Share any health, fitness, or personal data with advertising networks, analytics providers, or any third party.</li>
 </ul>
 
 <h2>How the App Works</h2>
@@ -32,11 +32,15 @@
   <li>You type a desired step count into the App.</li>
   <li>The App generates a synthetic step/distance record locally on your device.</li>
   <li>The App writes that record one-way into Android Health Connect.</li>
+  <li>Optionally, you can schedule a daily simulated walk that runs automatically in the background at a time and a distance/speed range you choose.</li>
 </ol>
 <p>All processing happens entirely on your device. No data leaves your device.</p>
 
+<h2>Scheduled Walks &amp; Exact Alarms</h2>
+<p>The App can run a daily simulated walk at a time you set, even when the App is closed. To start reliably in the background at the chosen time, the App requests Android's "Alarms &amp; reminders" special access (<code>SCHEDULE_EXACT_ALARM</code>). If this access is declined, a scheduled walk may not start while the App is closed. Scheduling preferences are stored only on your device.</p>
+
 <h2>Advertising</h2>
-<p>The App may display rewarded video ads to unlock larger step amounts. Advertisements are served by a third-party ad SDK. Because the App never reads your real health data, the ad SDK is only shown a user-typed step count — never any actual health or fitness information. No health data is shared with any ad network.</p>
+<p>The App may display rewarded video ads to unlock larger step amounts. Advertisements are served by Google AdMob (the Google Mobile Ads SDK). That SDK may collect certain device identifiers (such as the advertising ID) and approximate location for advertising and analytics purposes, as described in Google's own privacy disclosures. This is standard ad-serving behavior and does not involve your health data: because the App never reads your real health data, the ad SDK is only shown a user-typed step count — never any actual health or fitness information. No health or fitness data is shared with any ad network.</p>
 
 <h2>Health Connect Permissions</h2>
 <p>The App requests only the following <strong>write</strong> permissions from Health Connect:</p>
